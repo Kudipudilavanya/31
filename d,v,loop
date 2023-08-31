@@ -1,0 +1,14 @@
+let age = 9
+ 
+while (isNaN(age) || age <= 0) {
+    age = parseInt(prompt("Please enter a valid age:"));
+}
+
+ 
+if (age < 18) {
+    console.log("You can't login. You are below 18 years.");
+} else if (age >= 18) {
+    console.log("You can login. You are 18 years or older.");
+} else {
+    console.log("Invalid age input.");
+}
